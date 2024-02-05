@@ -1,0 +1,11 @@
+with-expecter: true
+inpackage: True
+dir: "{{.InterfaceDir}}/mock"
+
+packages:
+  github.com/qrinef/process-app/internal/client:
+    interfaces:
+      externalService:
+        config:
+          mockname: "MockExternal"
+          filename: "mock_external.go"
